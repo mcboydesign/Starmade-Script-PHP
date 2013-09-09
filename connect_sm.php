@@ -1,5 +1,5 @@
 <?php
-$fichserv = "//000starmade/logs/serverlog.txt.0";
+$fichserv = "chemin du fichier serverlog.txt.0";
 $tabserv=file($fichserv);
 for( $i = count($tabserv) ; $i >=0  ; $i-- )
 	{
@@ -16,7 +16,7 @@ for( $i = count($tabserv) ; $i >=0  ; $i-- )
 	}
 $version=substr($tabserv[$compteur],55);
 
-$fichier = "//000starmade/logs/log.txt.0";
+$fichier = "/chemin du fichier log.txt.0";
 $tabfich=file($fichier);
 
 $client[1]="Pas de joueur ou fichier log absent!";
@@ -82,7 +82,7 @@ else
 
 	echo "<tr><td><center>".($nbclient-1)."/32 joueurs.</center></td></tr>";
 }
-echo "<tr><td><center>Script mcboydesign@2k13</center></td></tr>";
+echo '<tr><td><center><a href="https://github.com/mcboydesign/Starmade-Script-PHP" target="_blank">Script mcboydesign@2k13</a></center></td></tr>';
 echo "</table>";
 echo "</center>";
 
